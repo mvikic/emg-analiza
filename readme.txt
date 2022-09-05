@@ -1,7 +1,5 @@
 Ukratko da Vam opišem rad programa.
 
-Prvo je potrebno napraviti par COM2-COM3 u COM PORT BRIDGE. COM2 za simulator, a COM3 koristi emg_analiza.py
-
 1) Pokrenuti EMG_Amplifier.exe
 2) Pritiskom na dugme SCAN skeniraju se svi dostupni portovi na računaru.
 3) U padajućem meniju COM port vrši se odabir porta koji će koristiti simulator

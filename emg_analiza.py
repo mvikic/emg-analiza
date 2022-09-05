@@ -19,7 +19,7 @@ def analiza_signala(naponi_lista):
     podjeljena_lista = [naponi_lista[i:i+100] for i in range(0, len(naponi_lista), 100)]
     for dio in podjeljena_lista:
         br_prolasci.append(prolasci_kroz_nulu(dio))
-        intervali_vrijeme.append(len(br_prolasci) * 0.2)
+        intervali_vrijeme.append(len(br_prolasci) * f * 100)
     return intervali_vrijeme, br_prolasci
 
 def konverzija(signal):
@@ -42,9 +42,7 @@ def main():
 
     fig, (osa_gore, osa_dole) = plt.subplots(nrows=2, ncols=1, figsize=(15, 8), constrained_layout=True)
     emg_podaci = com_port.readline
-    
     emg_signali = emg_podaci().split(b')(') 
-
     while len(emg_signali) > 1 or emg_signali[0]:
         for signal in emg_signali:
             if len(signal) >= 7: 
