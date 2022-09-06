@@ -1,5 +1,8 @@
 Ukratko da Vam opišem rad programa.
 
+Za serijsku komunikaciju aplikacije sa simulatorom potrebno instalirati paket pyserial unosom komande:
+	pip install pyserial
+
 1) Pokrenuti EMG_Amplifier.exe
 2) Pritiskom na dugme SCAN skeniraju se svi dostupni portovi na računaru.
 3) U padajućem meniju COM port vrši se odabir porta koji će koristiti simulator
